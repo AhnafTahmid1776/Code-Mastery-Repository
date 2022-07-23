@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+   long long ans;
+   cin >> ans;
+
+   if(ans%2==1){
+    return puts("0");
+
+   }
+   cout <<((ans/2-1)/2)<<endl;
+
+  }

@@ -1,0 +1,51 @@
+#include <bits/stdc++.h>
+using namespace std;
+//SET PRECIOSION   cout << fixed ;  cout << setprecision(n) << ans << endl;
+#define ll long long
+#define ld long double
+#define pair<ll,ll> PAIR
+#define endl "\n"
+#define mod 1000000007
+#define sz(v) ((int)(v).size())
+#define all(v) (v).begin(), (v).end()
+#define pb push_back
+#define N 3000009
+#define FAST ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+ll SET(ll n, ll pos) { return n = n | (1 << pos ); }
+ll RESET(ll n, ll pos) { return n = n & ~(1<<pos);}
+bool CHECK(ll n, ll pos) { return (bool) (n & (1<<pos));}
+vector <ll> v;
+ll x,y,z,a,b,c,sum,ans,total,t,cnt,n,m,k,p,q,r,l,w,right,left,row,col,kase;
+string s1,s2;
+map<ll,ll> mp;
+set<ll> s;
+map<ll,ll> :: iterator itr1, ptr1;
+set<ll> :: iterator itr, ptr;
+ll arr[N] , arr1[N] , ind[N];
+int main()
+{
+	///Peace be with you.
+	FAST;
+	cin>>t;
+	while(t--)
+    {
+        ll ones=0,n;
+        for(ll i=0; i<4; i++){
+            cin>> n;
+            if(n==1){
+                ones++;
+            }
+            
+        }
+        if(ones==4)cout <<2<<endl;
+        else if(ones==0)cout << 0<< endl;
+        else cout <<1<< endl;
+    }
+
+	return 0;
+}
+
+
+
+
+

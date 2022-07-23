@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--){
+        int x;
+        cin >>x;
+        int a,b,c;
+        cin >> a>> b>> c;
+        if(x==3 && ((c==2 && b==6-c-x)  || (c==1 && a==6-c-x ))){
+            cout << "YES"<< endl;
+        }
+        else if(x==2 && ((b==1 && a==6-b-x)  || (b==3 && c==6-b-x ))){
+            cout << "YES"<< endl;
+        }
+        else if(x==1 && ((a==2 && b==6-a-x)  || (a==3 && c==6-a-x ))){
+            cout << "YES"<< endl;
+        }
+        else cout << "NO"<< endl;
+    }
+}

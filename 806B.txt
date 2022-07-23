@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int t;
+    cin >> t;
+    while(t--){
+            int n;
+        cin >>n;
+        string str;
+        cin >>str;
+        int ct;
+
+      unordered_set<char> s;
+
+
+    for (int i = 0; i < str.size(); i++) {
+
+
+        s.insert(str[i]);
+    }
+
+    // Return Answer
+    int m=s.size();
+    ct=2*m+ (n-m);
+    cout << ct<< endl;
+
+   
+
+
+
+
+    }
+}

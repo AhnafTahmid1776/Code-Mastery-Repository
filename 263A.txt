@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+
+{
+    int r,c,i,k;
+    for (i=0; i<5 ; i++){
+        for(k=0; k<5 ;k++){
+                int el;
+            cin >> el;
+            if(el==1){
+                r=i;
+                c=k;
+            }
+
+
+        }
+    }
+    int ct=0;
+    if(r<=2){
+        ct+=2-r;
+    }
+    else ct += r-2;
+    if(c<=2){
+        ct+= 2-c;
+    }
+    else ct += c-2;
+    cout << ct << endl;
+
+
+
+}

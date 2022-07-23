@@ -1,0 +1,9 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    cout<<"ROY";
+    for(n=n-3;n--;cout<<"GBIV"[n%4]);//for printing random number
+}
